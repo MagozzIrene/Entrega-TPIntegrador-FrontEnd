@@ -67,7 +67,7 @@ h2 {
   width: 100%;
   margin: 0 auto;
   margin-top: var(--space-sm);
-  padding: var(--space-xs) var(--space-1xs);
+  padding: var(--space-sm) var(--space-1xs);
   border-radius: 1rem;
   font-size: 0.8rem;
   background-color: var(--input-bg-color);
@@ -132,7 +132,7 @@ h2 {
 }
 
 .contact__name {
-  font-size: var(--fs-md);
+  font-size: var(--fs-base);
 }
 
 .contact__last-seen {
@@ -146,7 +146,7 @@ h2 {
 }
 
 .contact__last-message {
-  font-size: var(--fs-sm);
+  font-size: 0.8rem;
   font-weight: 300;
   color: var(--secondary-txt-color);
 }

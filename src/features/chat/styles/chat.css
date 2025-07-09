@@ -59,6 +59,11 @@
     font-size: var(--fs-xs);
 }
 
+.filter-input:focus {
+    outline: none;
+    border: none;
+}
+
 .back-button {
     background-color: transparent;
     color: #fff;
