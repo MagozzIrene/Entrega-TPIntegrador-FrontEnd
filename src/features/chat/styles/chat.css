@@ -52,9 +52,9 @@
     color: var(--input-txt-color);
     width: 100%;
     margin: 0 auto;
-    padding: var(--space-1xs);
+    padding: var(--space-xs);
     border-radius: 1rem;
-    border: 1px solid;
+/*     border: 1px solid; */
     margin-top: var(--space-1xs);
     font-size: var(--fs-xs);
 }
@@ -149,7 +149,7 @@
 }
 
 .message__text {
-    font-size: var(--fs-xs);
+    font-size: var(--fs-sm);
 }
 
 .message__meta {
