@@ -80,6 +80,10 @@ h2 {
 /*   border: 1px solid rgba(187, 187, 187, 0.164); */
 }
 
+.contact-list-header .filter-input::placeholder {
+  color: var(--input-txt-color);
+}
+
 .filter-input:focus {
     outline: none;
     border: none;
