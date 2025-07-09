@@ -17,18 +17,15 @@ h2 {
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid #e00a0e;
     border-radius: 4px;
     padding: 20px;
     text-align: center;
 }
 
 .contact-list__empty p {
-    color: #fff;
-    font-family: 'Persona5', sans-serif;
+    color: var(--primary-txt-color);
     font-size: var(--fs-lg);
-    text-shadow: 0 0 5px #e00a0e;
+/*     text-shadow: 0 0 5px #e00a0e; */
     position: relative;
 }
 
@@ -110,7 +107,7 @@ h2 {
 
 .contact {
   display: flex;
-  gap: var(--space-xs);
+  gap: var(--space-sm);
   width: 100%;
   padding: /* var(--space-xs) */ var(--space-sm);
   border-radius: 0.5rem;
@@ -287,7 +284,7 @@ li {
 @media only screen and (min-width: 421px) {
 
   .contact-screen {
-    padding: var(--space-2xl) var(--space-2xl) 0 var(--space-2xl);
+    padding: var(--space-3xl) var(--space-3xl) 0 var(--space-3xl);
   }
 
 .contact-list-header {
@@ -309,7 +306,7 @@ li {
   }
 
   .contact-list {
-    gap: var(--space-xl);
+    gap: var(--space-md);
   }
 
   .contact {
@@ -317,12 +314,12 @@ li {
   }
 
   .contact__photo img {
-    max-width: 80px;
+    max-width: 90px;
 /*     border: 3px solid; */
   }
 
   .contact__name {
-    font-size: var(--fs-base);
+    font-size: var(--fs-lg);
   }
 
   .contact__last-message {

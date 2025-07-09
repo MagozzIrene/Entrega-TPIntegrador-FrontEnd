@@ -73,7 +73,7 @@
 .back-button {
     background-color: transparent;
     color: #fff;
-    font-size: var(--fs-md);
+    font-size: var(--fs-base);
     cursor: pointer;
 }
 
@@ -84,8 +84,8 @@
 }
 
 .chat-header img {
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 60px;
+    max-height: 60px;
     border-radius: 50%;
 /*     border: 2px solid var(--primary-txt-color); */
 }
@@ -95,8 +95,8 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid #e00a0e;
+/*     background-color: rgba(0, 0, 0, 0.7); */
+/*     border: 1px solid #e00a0e; */
     border-radius: 4px;
     padding: 20px;
     text-align: center;
@@ -104,9 +104,8 @@
 
 .chat-container.empty p {
     color: var(--primary-txt-color);
-    font-family: 'Persona5', sans-serif;
     font-size: var(--fs-lg);
-    text-shadow: 0 0 5px #e00a0e;
+/*     text-shadow: 0 0 5px #e00a0e; */
     position: relative;
 }
 
@@ -131,7 +130,7 @@
 
 .message {
     border-radius: 0.5rem;
-    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     max-width: 80%;
@@ -215,6 +214,7 @@
     padding: var(--space-sm);
     border-radius: 0.3rem;
     background-color: var(--input-bg-color);
+    color: var(--input-txt-color);
 }
 
 .chat-textarea::placeholder {
