@@ -9,7 +9,7 @@ h2 {
   height: 100dvh;
   background-color: var(--primary-bg-color);
   color: var(--primary-txt-color);
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
 
 .contact-list__empty {
@@ -152,7 +152,7 @@ h2 {
 
 .contact__last-message {
   font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--secondary-txt-color);
 }
 
@@ -276,9 +276,14 @@ li {
 }
 
 @media only screen and (min-width: 421px) {
-/*   .contact-list-header {
-    padding: var(--space-xl);
-  } */
+
+  .contact-screen {
+    padding: var(--space-2xl) var(--space-2xl) 0 var(--space-2xl);
+  }
+
+.contact-list-header {
+    margin-bottom: var(--space-xl)
+  }
 
   h2 {
     font-size: var(--fs-xl);

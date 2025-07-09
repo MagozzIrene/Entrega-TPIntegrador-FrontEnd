@@ -56,7 +56,7 @@
     border-radius: 1rem;
 /*     border: 1px solid; */
     margin-top: var(--space-1xs);
-    font-size: var(--fs-xs);
+    font-size: var(--fs-sm);
 }
 
 .filter-input:focus {
@@ -81,7 +81,7 @@
     max-width: 70px;
     max-height: 70px;
     border-radius: 50%;
-    border: 2px solid var(--primary-txt-color);
+/*     border: 2px solid var(--primary-txt-color); */
 }
 
 .chat-container.empty {
@@ -198,7 +198,7 @@
 
 .chat-form textarea {
     resize: none;
-    border: 1px solid var(--primary-txt-color);
+/*     border: 1px solid var(--primary-txt-color); */
     color: var(--secondary-txt-color);
 }
 
