@@ -12,8 +12,8 @@ const ContactListHeader = ({ onSearchChange, toggleTheme, isLight }) => {
 
     return (
         <header className="contact-list-header">
-            <div className="prueba">
-                <h2>PhantomChats</h2>
+            <div className="contact-list-header__content">
+                <h2>Phantom Chats</h2>
                 <ThemeToggle toggleTheme={toggleTheme} isLight={isLight} />
             </div>
             <Filter value={searchTerm} onChange={handleSearchChange} />

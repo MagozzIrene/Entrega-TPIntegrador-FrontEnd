@@ -18,26 +18,28 @@ const ChatHeader = ({ onSearchChange, onBack, activeContact }) => {
 
     return (
         <header className="chat-header">
-            <button onClick={onBack} className="back-button"><FaArrowLeft /></button>
-            <img src={activeContact.contact_photo} alt={`Foto de ${activeContact.name}`} />
-            <div className="chat-header__info-wrapper">
-                <div className="chat-header__info">
-                    <h3
-                        className="chat-name"
-                        onClick={handleClick}
-                        title="Ver detalles del contacto"
-                    >
-                        {activeContact.name}
-                    </h3>
-                    <span className="last-time">{activeContact.last_time_conected}</span>
+            <div className="chat-header__content">
+                <button onClick={onBack} className="back-button"><FaArrowLeft /></button>
+                <img src={activeContact.contact_photo} alt={`Foto de ${activeContact.name}`} />
+                <div className="chat-header__info-wrapper">
+                    <div className="chat-header__info">
+                        <h3
+                            className="chat-name"
+                            onClick={handleClick}
+                            title="Ver detalles del contacto"
+                        >
+                            {activeContact.name}
+                        </h3>
+                        <span className="last-time">{`Última conexión ${activeContact.last_time_conected}`}</span>
+                    </div>
                 </div>
-                <div className="chat-header__filter">
-                    <Filter
-                        value={searchTerm}
-                        onChange={handleSearchChange}
-                        placeholder="Buscar en el chat..."
-                    />
-                </div>
+            </div>
+            <div className="chat-header__filter">
+                <Filter
+                    value={searchTerm}
+                    onChange={handleSearchChange}
+                    placeholder="Buscar en el chat..."
+                />
             </div>
         </header>
     );
