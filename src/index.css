@@ -52,12 +52,13 @@
   --tertiary-bg-color: #d9d6d3;
 
   --contact-bg-color: #f4f1ee;
+  --contact-bg-active: #9b9c9c96;
 
   --primary-txt-color: #222222;
   --secondary-txt-color: #494848;
   
   --input-bg-color: #f6f5f4;
-  --input-txt-color : #626262;
+  --input-txt-color : #0e0e0e;
 }
 
 * {
