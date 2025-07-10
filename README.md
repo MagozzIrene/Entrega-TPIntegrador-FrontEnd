@@ -1,4 +1,4 @@
-Sobre el proceso
+Sobre el proceso 😊
 
 Este proyecto fue todo un proceso de prueba y error. Cambié varias veces el enfoque general: reorganicé la estructura de carpetas, los diseños, y sobre todo la forma de manejar los datos (contextos, estados, props). En algunos momentos incluso volví a empezar desde cero porque sentía que el rumbo que estaba tomando no era el mejor.
 
@@ -49,4 +49,3 @@ Algunas dudas o cosas a revisar
     Tenía un hook que permitía renderizar múltiples pantallas al mismo tiempo según el tamaño de pantalla, pero me rompía algunas cosas y no llegué a pulirlo lo suficiente como para incluirlo en la entrega.
 
     Me quedó la duda de si habría sido mejor hacer un archivo de estilos por cada componente, en lugar de agrupar todos los relacionados al chat en un archivo y todos los de los contactos en otro. ¿Hubiese sido más escalable o más difícil de mantener?
-
