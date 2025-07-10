@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import Filter from "@/shared/Filter";
 import { FaArrowLeft } from "react-icons/fa6";
+import { HiOutlineMagnifyingGlass } from "react-icons/hi2";
 
 const ChatHeader = ({ onSearchChange, onBack, activeContact }) => {
     const [searchTerm, setSearchTerm] = useState("");
+
+    const [showFilter, setShowFilter] = useState(false)
+
     const navigate = useNavigate();
 
     const handleSearchChange = (value) => {
@@ -31,10 +35,11 @@ const ChatHeader = ({ onSearchChange, onBack, activeContact }) => {
                             {activeContact.name}
                         </h3>
                         <span className="last-time">{`Última conexión ${activeContact.last_time_conected}`}</span>
+                        <HiOutlineMagnifyingGlass className="search-toggle" onClick={() => setShowFilter(!showFilter)} />
                     </div>
                 </div>
             </div>
-            <div className="chat-header__filter">
+            <div className={`chat-header__filter animated-filter ${showFilter ? 'visible' : 'hidden'}`}>
                 <Filter
                     value={searchTerm}
                     onChange={handleSearchChange}
