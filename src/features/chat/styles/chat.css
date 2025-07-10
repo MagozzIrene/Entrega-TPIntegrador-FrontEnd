@@ -190,7 +190,6 @@
 .delete-btn {
     background-color: transparent;
     font-size: var(--fs-sm);
-    /*     color: transparent; */
     color: red;
     cursor: pointer;
 }
