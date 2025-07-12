@@ -7,9 +7,3 @@
     color: var(--primary-txt-color);
     padding: 1rem 1rem 0 1rem;
 }
-
-@media only screen and (min-width: 750px) {
-/*     .contact-screen {
-        padding: var(--space-3xl) var(--space-3xl) 0 var(--space-3xl);
-    } */
-}

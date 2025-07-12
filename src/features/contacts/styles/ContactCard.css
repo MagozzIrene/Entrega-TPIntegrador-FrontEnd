@@ -3,7 +3,7 @@
     gap: var(--space-sm);
     width: 100%;
     padding: var(--space-sm);
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     background-color: var(--contact-bg-color);
     cursor: pointer;
 }
