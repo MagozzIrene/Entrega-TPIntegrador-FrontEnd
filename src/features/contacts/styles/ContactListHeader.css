@@ -49,18 +49,18 @@ h1 {
     border: none;
 }
 
-@media only screen and (min-width: 421px) {
+@media only screen and (min-width: 750px) {
     .contact-list-header {
         margin-bottom: var(--space-xl)
     }
 
     h1 {
-        font-size: var(--fs-xl);
+        font-size: var(--fs-lg);
     }
 
     .contact-list-header .filter-input {
         padding: var(--space-sm);
-        font-size: var(--fs-base);
+/*         font-size: var(--fs-base); */
     }
 
     .theme-toggle-btn svg {
@@ -70,22 +70,5 @@ h1 {
 
     .contact-list {
         gap: var(--space-md);
-    }
-}
-
-@media only screen and (min-width: 769px) {
-    h1 {
-        font-size: var(--fs-xxl);
-        margin-bottom: var(--space-sm);
-    }
-
-    .contact-list-header .filter-input {
-        padding: var(--space-lg);
-        font-size: var(--fs-lg);
-    }
-
-    .theme-toggle-btn svg {
-        width: 50px;
-        height: 50px;
     }
 }

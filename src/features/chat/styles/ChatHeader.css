@@ -89,19 +89,19 @@
     border: none;
 }
 
-@media only screen and (min-width: 421px) {
+@media only screen and (min-width: 750px) {
     .chat-header {
-        padding: var(--space-xl);
+/*         padding: var(--space-xl); */
         gap: var(--fs-md);
     }
 
     .chat-header .back-button {
-        font-size: var(--fs-lg);
+        display: none;
     }
 
     .chat-header img {
-        max-width: 90px;
-        max-height: 90px;
+        max-width: 80px;
+        max-height: 80px;
     }
 
     .chat-name {
@@ -119,38 +119,5 @@
     .search-toggle {
         font-size: var(--fs-base);
         margin-top: var(--space-xxs);
-    }
-}
-
-@media only screen and (min-width: 769px) {
-
-    .chat-header {
-        padding: var(--space-2xl);
-        gap: var(--space-xl);
-    }
-
-    .chat-header .back-button {
-        font-size: var(--fs-xl);
-    }
-
-    .chat-header img {
-        max-width: 120px;
-        max-height: 120px;
-    }
-
-    .chat-name {
-        font-size: var(--fs-xl);
-    }
-
-    .last-time {
-        font-size: var(--fs-base);
-    }
-
-    .chat-header__filter .filter-input {
-        font-size: var(--fs-base);
-    }
-    
-    .search-toggle {
-        font-size: var(--fs-xl);
     }
 }

@@ -1,21 +1,17 @@
-import { useEffect, useState } from 'react';
+import { useContext } from 'react';
 import ChatScreen from '@/features/chat/screens/ChatScreen';
 import ContactScreen from '@/features/contacts/screens/ContactScreen';
+import { ActiveChatContext } from '../../context/ActiveChatContext';
+import ChatPlaceholder from './ChatPlaceholder';
+import useIsMobile from '../../hooks/useIsMobile';
+
 import './SplitScreenLayout.css'
 
 const SplitScreenLayout = ({ toggleTheme, isLight }) => {
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
     const { activeChatId } = useContext(ActiveChatContext);
+    const isMobile = useIsMobile();
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsDesktop(window.innerWidth >= 768);
-        };
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    if (!isDesktop) return null;
+    if (isMobile) return null;
 
     return (
         <div className="split-screen">

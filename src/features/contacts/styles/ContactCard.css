@@ -46,53 +46,26 @@
 }
 
 .contact__last-message {
-    font-size: 0.8rem;
+    font-size: var(--fs-sm);
     font-weight: 400;
     color: var(--secondary-txt-color);
 }
 
-@media only screen and (min-width: 421px) {
-    .contact {
+@media only screen and (min-width: 750px) {
+/*     .contact {
         padding: var(--space-sm) var(--space-lg);
-    }
+    } */
 
-    .contact__photo img {
-        max-width: 90px;
-    }
-
-    .contact__name {
+/*     .contact__name {
         font-size: var(--fs-lg);
     }
-
+ */
     .contact__last-message {
-        font-size: var(--fs-md);
+        font-size: 0.8rem;
         font-weight: 400;
     }
 
     .contact__last-seen {
-        font-size: var(--fs-md);
-    }
-}
-
-@media only screen and (min-width: 769px) {
-    .contact {
-        padding: var(--space-lg) var(--space-2xl)
-    }
-
-    .contact__photo img {
-        max-width: 150px;
-    }
-
-    .contact__name {
-        font-size: var(--fs-xml);
-    }
-
-    .contact__last-message {
-        font-size: var(--fs-xl);
-        font-weight: 500;
-    }
-
-    .contact__last-seen {
-        font-size: var(--fs-lg);
+        font-size: 0.8rem;
     }
 }

@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import ContactCard from "./ContactCard";
 import { ContactsContext } from "@/context/ContactsContext";
 import { MessagesContext } from "@/context/MessagesContext";
-/* import "../styles/contacts.css"; */
 import LoaderSpinner from "@/shared/LoaderSpinner";
 import { sortContactsByLastMessage } from "@/shared/sortContactsByLastMessage";
 import getLastMessageText from "@/shared/getLastMessageText";

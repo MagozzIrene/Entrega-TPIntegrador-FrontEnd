@@ -8,14 +8,8 @@
     padding: 1rem 1rem 0 1rem;
 }
 
-@media only screen and (min-width: 421px) {
-    .contact-screen {
+@media only screen and (min-width: 750px) {
+/*     .contact-screen {
         padding: var(--space-3xl) var(--space-3xl) 0 var(--space-3xl);
-    }
-}
-
-@media only screen and (min-width: 769px) {
-    .contact-screen {
-        padding: var(--space-4xl) var(--space-4xl) 0 var(--space-4xl);
-    }
+    } */
 }

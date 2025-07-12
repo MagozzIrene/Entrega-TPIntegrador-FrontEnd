@@ -5,12 +5,12 @@
 }
 
 .split-screen__left {
-    width: 35%;
+    flex: 1.7;
     border-right: 1px solid var(--border-color);
     overflow-y: auto;
 }
 
 .split-screen__right {
-    flex-grow: 1;
+    flex: 3;
     overflow-y: auto;
 }

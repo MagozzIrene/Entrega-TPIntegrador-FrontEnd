@@ -64,9 +64,9 @@
     cursor: pointer;
 }
 
-@media only screen and (min-width: 421px) {
+@media only screen and (min-width: 750px) {
     .message {
-        padding: var(--space-md);
+/*         padding: var(--space-md); */
         gap: var(--space-sm);
     }
 
@@ -76,25 +76,6 @@
 
     .message__meta {
         font-size: var(--fs-sm);
-    }
-}
-
-@media only screen and (min-width: 769px) {
-    .message {
-        padding: var(--space-lg);
-        gap: var(--space-sm);
-    }
-
-    .message__text {
-        font-size: var(--fs-lg);
-    }
-
-    .message__meta {
-        font-size: var(--fs-base);
-    }
-
-    .delete-btn {
-        font-size: var(--fs-md);
     }
 }
 

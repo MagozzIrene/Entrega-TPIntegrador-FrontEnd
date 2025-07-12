@@ -108,7 +108,7 @@ li {
     transform: scale(1.2);
 }
 
-@media only screen and (min-width: 421px) {
+@media only screen and (min-width: 750px) {
     .contact-details__photo {
         width: 140px;
         height: 140px;
@@ -130,29 +130,5 @@ li {
 
     .contact-detail__info ul {
         margin-left: var(--space-lg);
-    }
-}
-
-@media only screen and (min-width: 769px) {
-    .contact-details__photo {
-        width: 180px;
-        height: 180px;
-    }
-
-    .contact-details__name {
-        font-size: var(--fs-xml);
-    }
-
-    .contact-details__button {
-        padding: var(--space-2xl);
-        font-size: var(--fs-xl);
-    }
-
-    .contact-detail__info p {
-        font-size: var(--fs-xl);
-    }
-
-    .contact-detail__info ul {
-        margin-left: var(--space-2xl);
     }
 }

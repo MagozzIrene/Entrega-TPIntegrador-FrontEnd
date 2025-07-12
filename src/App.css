@@ -3,14 +3,14 @@
     flex-direction: column;
     width: 100%;
     min-width: 280px;
-    max-width: 420px;
+    max-width: 750px;
     min-height: 100dvh;
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 421px) {
+@media only screen and (min-width: 751px) {
     .app {
-        min-width: 421px;
+        min-width: 751px;
         max-width: 100%;;
     }
 }
