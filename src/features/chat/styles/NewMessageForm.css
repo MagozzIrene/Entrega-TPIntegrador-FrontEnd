@@ -86,7 +86,7 @@
     height: 100%;
     background-color: transparent;
     font-size: var(--fs-xl);
-    color: #144d37;
+    color: var(--icon-color);
     cursor: pointer;
     border: none;
     padding: 0;

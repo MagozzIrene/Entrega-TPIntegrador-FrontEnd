@@ -17,6 +17,9 @@
     cursor: pointer;
     color: var(--primary-txt-color);
 }
+.contact-detail__last-time {
+    font-size: 0.8rem;
+}
 
 .back-button.detail:hover {}
 
@@ -63,7 +66,7 @@
 }
 
 .contact-details__button svg {
-    color: #25d366;
+    color: var(--icon-color);
 }
 
 .button-text {

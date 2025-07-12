@@ -28,6 +28,7 @@ const ContactDetails = ({ contact }) => {
                 <button onClick={handleBack} className="back-button detail"><FaArrowLeft /></button>
                 <img src={contact.contact_photo} alt={contact.name} className="contact-details__photo" />
                 <h2 className="contact-details__name">{contact.name} <span className="codename">({contact.codename})</span></h2>
+                <p className="contact-detail__last-time">{`Última conección a las ${contact.last_time_conected}hs`}</p>
                 <div className="contact-details__buttons">
                     <button className="contact-details__button"><MdOutlinePhone /><p className="button-text">Llamar</p></button>
                     <button className="contact-details__button"><AiOutlineVideoCamera /><p className="button-text">Video</p></button>
