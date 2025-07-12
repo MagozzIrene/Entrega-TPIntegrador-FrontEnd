@@ -3,7 +3,10 @@ import './ChatPlaceholder.css'
 const ChatPlaceholder = () => {
     return (
         <div className="chat-placeholder">
-            <p>Seleccioná un chat para comenzar 📨</p>
+            <div className="chat-placeholder__box">
+                <p className="chat-placeholder__icon">💬</p>
+                <p className="chat-placeholder__text">Seleccioná un chat para comenzar</p>
+            </div>
         </div>
     );
 };
