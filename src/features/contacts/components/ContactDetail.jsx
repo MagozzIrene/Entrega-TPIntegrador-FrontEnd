@@ -4,6 +4,14 @@ import { FaArrowLeft } from "react-icons/fa";
 import { MdOutlinePhone } from "react-icons/md";
 import { AiOutlineVideoCamera } from "react-icons/ai";
 import { SlMagnifier } from "react-icons/sl";
+import { FaQuoteLeft } from 'react-icons/fa'
+import { GiCardJoker } from 'react-icons/gi'
+import { BsPersonFill } from 'react-icons/bs'
+import { GiBrokenShield } from 'react-icons/gi'
+import { FaHeart } from 'react-icons/fa'
+import { GiMagicSwirl } from 'react-icons/gi'
+
+
 import '../styles/ContactDetail.css'
 
 const ContactDetails = ({ contact }) => {
@@ -21,21 +29,33 @@ const ContactDetails = ({ contact }) => {
                 <img src={contact.contact_photo} alt={contact.name} className="contact-details__photo" />
                 <h2 className="contact-details__name">{contact.name} <span className="codename">({contact.codename})</span></h2>
                 <div className="contact-details__buttons">
-                    <button className="contact-details__button"><MdOutlinePhone /></button>
-                    <button className="contact-details__button"><AiOutlineVideoCamera /></button>
-                    <button className="contact-details__button"><SlMagnifier /></button>
+                    <button className="contact-details__button"><MdOutlinePhone /><p className="button-text">Llamar</p></button>
+                    <button className="contact-details__button"><AiOutlineVideoCamera /><p className="button-text">Video</p></button>
+                    <button className="contact-details__button"><SlMagnifier /><p className="button-text">Buscar</p></button>
                 </div>
             </header>
             <div className="contact-detail__info">
-                <p><strong>Arcana:</strong> {contact.arcana}</p>
-                <p><strong>Persona:</strong> {contact.persona}</p>
-                <p><strong>Debilidad:</strong> {contact.weakness}</p>
-                <p><strong>Frase:</strong> <em>"{contact.quote}"</em></p>
-                <p><strong>Afinidad:</strong> {contact.affinity}/100</p>
-                <p><strong>Habilidades:</strong></p>
-                <ul>
-                    {contact.skills.map((skill, i) => <li key={i}>{skill}</li>)}
-                </ul>
+                <div className="contact-detail__info-section">
+                    <p><FaQuoteLeft /><strong>Frase:</strong> <em>"{contact.quote}"</em></p>
+                </div>
+                <div className="contact-detail__info-section">
+                    <p><GiCardJoker /><strong>Arcana:</strong> {contact.arcana}</p>
+                </div>
+                <div className="contact-detail__info-section">
+                    <p><BsPersonFill /><strong>Persona:</strong> {contact.persona}</p>
+                </div>
+                <div className="contact-detail__info-section">
+                    <p><GiBrokenShield /><strong>Debilidad:</strong> {contact.weakness}</p>
+                </div>
+                <div className="contact-detail__info-section">
+                    <p><FaHeart /><strong>Afinidad:</strong> {contact.affinity}/100</p>
+                </div>
+                <div className="contact-detail__info-section">
+                    <p><GiMagicSwirl /><strong>Habilidades:</strong></p>
+                    <ul>
+                        {contact.skills.map((skill, i) => <li key={i}>{skill}</li>)}
+                    </ul>
+                </div>
             </div>
         </div>
     );

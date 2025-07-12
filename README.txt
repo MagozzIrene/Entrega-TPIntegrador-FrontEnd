@@ -47,5 +47,3 @@ Algunas dudas o cosas a revisar
     Podría haber usado más variables CSS para evitar repeticiones.
 
     Los detalles del contacto (en la vista individual) quedaron con menos diseño del que había imaginado al principio.
-
-    Tenía un hook que permitía renderizar múltiples pantallas al mismo tiempo según el tamaño de pantalla, pero me rompía algunas cosas y no llegué a pulirlo lo suficiente como para incluirlo en la entrega.
