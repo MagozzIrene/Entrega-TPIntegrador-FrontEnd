@@ -29,6 +29,8 @@
     width: 90%;
 }
 
+/* EmojiPickerReact */
+
 .emoji-button {
     background: none;
     border: none;
@@ -54,6 +56,41 @@
     border-radius: 0.75rem;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
+
+.epr-main.EmojiPickerReact.epr_mw4zr1.epr_q53mwh.epr_7hyle2.epr_-x928hz.epr_-rvl3je.epr_-khp9xq.epr_-to8mm.epr_-4ueg5a.epr_iddbfm.epr_vy4vae.epr_6daqyu.epr_-6npj90.epr-dark-theme.epr_-vj00gx {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-txt-color);
+    border: none;
+    border-radius: 0.5rem;
+    font-family: "Persona5", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.epr_-orqfm8.epr_-r9nwrc.epr_-6o6jd0.epr_-ivanlx.epr_-a4fw28.epr_-z2fuzw.epr_-8623pq.epr_-2zpaw9.epr_-quhs3c.epr_x558go {
+    background-color: var(--input-bg-color);
+    color: var(--input-txt-color);
+    border: 1px solid var(--contact-bg-active);
+    border-radius: 6px;
+}
+
+.emoji-picker-wrapper .epr-emoji-category-label {
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-txt-color);
+}
+
+.epr_-99h9r1.epr_-egzoqq.epr_390n37.epr_-blo395 {
+    color: var(--primary-txt-color);
+}
+
+.epr_q53mwh.epr_vl50xg.epr_-3yva2a.epr_c90x4z.epr_-sisw4f.epr_mw4zr1.epr_-kg0voo.epr_iogimd.epr_wtwvf4.epr_-lzq3oa {
+    border-top: 1px solid var(--secondary-txt-color);
+}
+
+.epr-emoji-img.epr_-a3ewa5.epr_-tul3d0.epr_xfdx0l.epr_-u8wwnq.epr_dkrjwv.__EmojiPicker__.epr_-dyxviy.epr_-w2g3k2.epr_-8yncdp.epr_szp4ut:hover {
+    background-color: var(--contact-bg-active);
+    border-radius: 6px;
+}
+
+/* EmojiPickerReact */
 
 .chat-textarea {
     width: 100%;
