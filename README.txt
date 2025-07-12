@@ -49,5 +49,3 @@ Algunas dudas o cosas a revisar
     Los detalles del contacto (en la vista individual) quedaron con menos diseño del que había imaginado al principio.
 
     Tenía un hook que permitía renderizar múltiples pantallas al mismo tiempo según el tamaño de pantalla, pero me rompía algunas cosas y no llegué a pulirlo lo suficiente como para incluirlo en la entrega.
-
-    Me quedó la duda de si habría sido mejor hacer un archivo de estilos por cada componente, en lugar de agrupar todos los relacionados al chat en un archivo y todos los de los contactos en otro. ¿Hubiese sido más escalable o más difícil de mantener?
