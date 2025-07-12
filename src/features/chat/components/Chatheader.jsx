@@ -3,6 +3,7 @@ import { useNavigate } from "react-router";
 import Filter from "@/shared/Filter";
 import { FaArrowLeft } from "react-icons/fa6";
 import { HiOutlineMagnifyingGlass } from "react-icons/hi2";
+import '../styles/ChatHeader.css'
 
 const ChatHeader = ({ onSearchChange, onBack, activeContact }) => {
     const [searchTerm, setSearchTerm] = useState("");

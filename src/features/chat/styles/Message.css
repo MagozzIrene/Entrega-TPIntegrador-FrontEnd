@@ -1,0 +1,111 @@
+.highlight {
+    background-color: #feca1b;
+    border-radius: 0.09rem;
+}
+
+.message-animated {
+    animation: fadeInUp 0.3s ease forwards;
+}
+
+.message {
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    padding: var(--space-sm);
+    color: var(--primary-txt-color);
+    gap: var(--space-1xs);
+}
+
+.message.own {
+    align-self: flex-end;
+    justify-content: flex-end;
+    background-color: var(--message-bg-own);
+    border-top-right-radius: var(--space-xxs);
+}
+
+.message.other {
+    align-self: flex-start;
+    justify-content: flex-start;
+    background-color: var(--message-bg-other);
+    border-top-left-radius: var(--space-xxs);
+}
+
+.message__text {
+    font-size: var(--fs-sm);
+}
+
+.message__meta {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    gap: var(--space-xs);
+    font-size: var(--fs-xs);
+}
+
+.message__time {
+    color: var(--secondary-txt-color);
+}
+
+.message__status--read {
+    color: var(--message-status-read);
+}
+
+.message__status--no-read,
+.message__status--no-send {
+    color: var(--secondary-txt-color);
+}
+
+.delete-btn {
+    background-color: transparent;
+    font-size: var(--fs-sm);
+    color: red;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 421px) {
+    .message {
+        padding: var(--space-md);
+        gap: var(--space-sm);
+    }
+
+    .message__text {
+        font-size: var(--fs-md);
+    }
+
+    .message__meta {
+        font-size: var(--fs-sm);
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .message {
+        padding: var(--space-lg);
+        gap: var(--space-sm);
+    }
+
+    .message__text {
+        font-size: var(--fs-lg);
+    }
+
+    .message__meta {
+        font-size: var(--fs-base);
+    }
+
+    .delete-btn {
+        font-size: var(--fs-md);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import { MessagesContext } from "@/context/MessagesContext";
 import { ActiveChatContext } from "@/context/ActiveChatContext";
+import '../styles/Message.css'
 
 const highlightText = (text, searchTerm) => {
     if (!searchTerm) return text;

@@ -6,7 +6,8 @@ import ChatHeader from '../components/Chatheader'
 import { ActiveChatContext } from '@/context/ActiveChatContext'
 import { ContactsContext } from '@/context/ContactsContext'
 import LoaderSpinner from '@/shared/LoaderSpinner'
-import '../styles/chat.css'
+/* import '../styles/chat.css' */
+import '../styles/ChatScreen.css'
 
 const ChatScreen = () => {
     const [searchTerm, setSearchTerm] = useState("");

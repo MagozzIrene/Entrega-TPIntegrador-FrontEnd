@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useRef } from "react"
 import Message from "./Message"
 import { MessagesContext } from "@/context/MessagesContext"
 import { ActiveChatContext } from "@/context/ActiveChatContext";
+import '../styles/ChatMessages.css'
 
 const ChatMessages = ({ searchTerm }) => {
     const { messages } = useContext(MessagesContext);

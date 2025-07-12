@@ -3,6 +3,7 @@ import { MessagesContext } from '@/context/MessagesContext'
 import EmojiPicker from 'emoji-picker-react';
 import { IoSend } from "react-icons/io5";
 import { FaRegSmile } from "react-icons/fa";
+import '../styles/NewMessageForm.css'
 
 const NewMessageForm = () => {
     const [newMessage, setNewMessage] = useState('')

@@ -1,0 +1,98 @@
+.contact {
+    display: flex;
+    gap: var(--space-sm);
+    width: 100%;
+    padding: var(--space-sm);
+    border-radius: 0.5rem;
+    background-color: var(--contact-bg-color);
+    cursor: pointer;
+}
+
+.contact:hover {
+    background-color: var(--contact-bg-active);
+}
+
+.contact__photo img {
+    max-width: 70px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.contact__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contact__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__name {
+    font-size: var(--fs-base);
+}
+
+.contact__last-seen {
+    font-size: var(--fs-xs);
+    font-weight: 300;
+    color: var(--secondary-txt-color);
+}
+
+.contact__preview {
+    margin-top: var(--space-1xs);
+}
+
+.contact__last-message {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--secondary-txt-color);
+}
+
+@media only screen and (min-width: 421px) {
+    .contact {
+        padding: var(--space-sm) var(--space-lg);
+    }
+
+    .contact__photo img {
+        max-width: 90px;
+    }
+
+    .contact__name {
+        font-size: var(--fs-lg);
+    }
+
+    .contact__last-message {
+        font-size: var(--fs-md);
+        font-weight: 400;
+    }
+
+    .contact__last-seen {
+        font-size: var(--fs-md);
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .contact {
+        padding: var(--space-lg) var(--space-2xl)
+    }
+
+    .contact__photo img {
+        max-width: 150px;
+    }
+
+    .contact__name {
+        font-size: var(--fs-xml);
+    }
+
+    .contact__last-message {
+        font-size: var(--fs-xl);
+        font-weight: 500;
+    }
+
+    .contact__last-seen {
+        font-size: var(--fs-lg);
+    }
+}

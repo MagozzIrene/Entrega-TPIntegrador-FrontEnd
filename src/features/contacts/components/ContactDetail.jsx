@@ -4,6 +4,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { MdOutlinePhone } from "react-icons/md";
 import { AiOutlineVideoCamera } from "react-icons/ai";
 import { SlMagnifier } from "react-icons/sl";
+import '../styles/ContactDetail.css'
 
 const ContactDetails = ({ contact }) => {
 

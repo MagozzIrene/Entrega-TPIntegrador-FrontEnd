@@ -1,7 +1,8 @@
 import React, { useState} from 'react'
 import ContactListHeader from '../components/ContactListHeader'
 import ContactList from '../components/ContactList'
-import '../styles/contacts.css'
+/* import '../styles/contacts.css' */
+import '../styles/ContactScreen.css'
 
 const ContactScreen = ({ toggleTheme, isLight }) => {
     const [searchTerm, setSearchTerm] = useState("");

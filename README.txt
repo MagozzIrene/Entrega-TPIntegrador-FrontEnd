@@ -11,6 +11,8 @@ Cosas que me gustan 🤩
 Funcionalidades del chat:
 
     Los mensajes tienen una animación suave de entrada que da más vida a la conversación.
+    
+    Los mensajes enviados capturan la hora real.
 
     El chat scrollea automáticamente hacia el último mensaje al ingresar o enviar uno nuevo.
 

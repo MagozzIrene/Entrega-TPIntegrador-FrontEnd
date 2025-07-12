@@ -1,0 +1,6 @@
+.contact-detail-screen {
+    display: flex;
+    width: 100%;
+    min-height: 100dvh;
+    background-color: var(--primary-bg-color);
+}

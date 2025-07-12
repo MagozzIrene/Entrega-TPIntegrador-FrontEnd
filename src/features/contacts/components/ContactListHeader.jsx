@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import Filter from '@/shared/Filter'
 import ThemeToggle from "../../ThemeToggle/ThemeToggle";
+import '../styles/ContactListHeader.css'
 
 const ContactListHeader = ({ onSearchChange, toggleTheme, isLight }) => {
     const [searchTerm, setSearchTerm] = useState("");
@@ -13,7 +14,7 @@ const ContactListHeader = ({ onSearchChange, toggleTheme, isLight }) => {
     return (
         <header className="contact-list-header">
             <div className="contact-list-header__content">
-                <h2>Phantom Chats</h2>
+                <h1>Phantom Chats</h1>
                 <ThemeToggle toggleTheme={toggleTheme} isLight={isLight} />
             </div>
             <Filter value={searchTerm} onChange={handleSearchChange} />

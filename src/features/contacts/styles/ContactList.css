@@ -1,0 +1,45 @@
+.contact-list__empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-list__empty p {
+    color: var(--primary-txt-color);
+    font-size: var(--fs-lg);
+    position: relative;
+}
+
+.contact-list__empty p::before {
+    content: "⚠️";
+    display: block;
+    font-size: var(--fs-xxl);
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 3px #e00a0e);
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+    flex-grow: 1;
+    width: 100%;
+    padding-bottom: var(--space-xl);
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.contact-list::-webkit-scrollbar {
+    display: none;
+}
+
+@media only screen and (min-width: 421px) {
+    .contact-list {
+        gap: var(--space-md);
+    }
+}

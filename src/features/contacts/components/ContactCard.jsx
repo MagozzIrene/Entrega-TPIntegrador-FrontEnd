@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { ActiveChatContext } from "@/context/ActiveChatContext";
+import '../styles/ContactCard.css'
 
 const ContactCard = ({ id, name, last_time_conected, contact_photo, last_message }) => {
 

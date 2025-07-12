@@ -1,4 +1,4 @@
-.chat-screen {
+/* .chat-screen {
     height: 100dvh;
     width: 100%;
     display: flex;
@@ -127,7 +127,6 @@
     flex-grow: 1;
     padding: var(--fs-sm);
     background-color: var(--chat-bg-color);
-
     overflow: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -450,4 +449,4 @@
     .emoji-button {
         font-size: var(--fs-xl);
     }
-}
+} */

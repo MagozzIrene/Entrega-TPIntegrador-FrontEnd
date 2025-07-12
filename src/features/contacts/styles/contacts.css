@@ -1,4 +1,4 @@
-h2 {
+/* h1 {
   font-size: var(--fs-lg);
 }
 
@@ -279,7 +279,7 @@ li {
     margin-bottom: var(--space-xl)
   }
 
-  h2 {
+  h1 {
     font-size: var(--fs-xl);
   }
 
@@ -348,7 +348,7 @@ li {
     padding: var(--space-4xl) var(--space-4xl) 0 var(--space-4xl);
   }
 
-  h2 {
+  h1 {
     font-size: var(--fs-xxl);
     margin-bottom: var(--space-sm);
   }
@@ -405,4 +405,4 @@ li {
   .contact-detail__info ul {
     margin-left: var(--space-2xl);
   }
-}
+} */

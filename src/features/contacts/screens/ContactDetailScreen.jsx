@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import { ContactsContext } from "@/context/ContactsContext";
 import ContactDetails from "../components/ContactDetail";
 import LoaderSpinner from '@/shared/LoaderSpinner'
+import '../styles/ContactDetailScreen.css'
 
 const ContactDetailScreen = () => {
     const { contacts } = useContext(ContactsContext);
