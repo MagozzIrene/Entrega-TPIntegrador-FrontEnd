@@ -1,12 +1,12 @@
-import React, { useState} from 'react'
+import React, { useContext, useState} from 'react'
 import ContactListHeader from '../components/ContactListHeader'
 import ContactList from '../components/ContactList'
-/* import '../styles/contacts.css' */
+import { ActiveChatContext } from '@/context/ActiveChatContext';
 import '../styles/ContactScreen.css'
 
 const ContactScreen = ({ toggleTheme, isLight }) => {
     const [searchTerm, setSearchTerm] = useState("");
-    const [setActiveChatId] = useState(null);
+    const { setActiveChatId } = useContext(ActiveChatContext);
 
     return (
         <div className='contact-screen'>

@@ -1,31 +1,25 @@
-import { createContext, useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router";
+import { createContext, useState, useEffect} from "react";
+import { useLocation } from "react-router";
 
 export const ActiveChatContext = createContext({
     activeChatId: "", 
-    updateActiveChat: () => { }
+    setActiveChatId: () => {}
 });
 
 const ActiveChatProvider = ({ children }) => {
-    const [activeChatId, setActiveChatId] = useState("1");
-    const params = useParams();
-    const navigate = useNavigate();
+    const [activeChatId, setActiveChatId] = useState("");
+    const location = useLocation();
 
     useEffect(() => {
-        if (params.chatId && params.chatId !== activeChatId) {
-            setActiveChatId(params.chatId);
+        const match = location.pathname.match(/^\/chat\/(\d+)/);
+        if (match) {
+            const chatIdFromUrl = match[1];
+            setActiveChatId(chatIdFromUrl);
         }
-    }, [params.chatId]);
-
-    const updateActiveChat = (chatId) => {
-        setActiveChatId(chatId);
-        navigate(`/chat/${chatId}`);
-    };
+    }, [location]);
 
     return (
-        <ActiveChatContext.Provider value={{ 
-            activeChatId: activeChatId, 
-            updateActiveChat: updateActiveChat }}>
+        <ActiveChatContext.Provider value={{ activeChatId, setActiveChatId }}>
             {children}
         </ActiveChatContext.Provider>
     );

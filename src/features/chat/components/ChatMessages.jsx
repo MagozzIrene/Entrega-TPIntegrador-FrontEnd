@@ -16,6 +16,10 @@ useEffect(() => {
         }
     }, [activeMessages, activeChatId]);
 
+    if (!activeChatId || !(activeChatId in messages)) {
+    return null;
+}
+
     if (activeMessages.length === 0) {
         return (
             <div className="chat-container empty">

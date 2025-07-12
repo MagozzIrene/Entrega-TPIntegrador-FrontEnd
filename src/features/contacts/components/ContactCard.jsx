@@ -1,14 +1,17 @@
 import React, { useContext } from "react";
 import { ActiveChatContext } from "@/context/ActiveChatContext";
 import '../styles/ContactCard.css'
+import { useNavigate } from "react-router";
 
 const ContactCard = ({ id, name, last_time_conected, contact_photo, last_message }) => {
 
-    const { updateActiveChat } = useContext(ActiveChatContext);
+    const { setActiveChatId } = useContext(ActiveChatContext);
+    const navigate = useNavigate();
 
     const handleClick = () => {
-        updateActiveChat(id);
-    };
+    setActiveChatId(id);
+    navigate(`/chat/${id}`);
+};
 
     return (
         <div className="contact" onClick={handleClick}>

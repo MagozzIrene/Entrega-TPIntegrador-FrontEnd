@@ -8,7 +8,7 @@ export const MessagesContext = createContext({
 });
 
 const MessagesContextProvider = ({ children }) => {
-    const { activeChatId} = useContext(ActiveChatContext);
+    const { activeChatId } = useContext(ActiveChatContext);
 
 
     const [messages, setMessages] = useState(
@@ -337,27 +337,39 @@ const MessagesContextProvider = ({ children }) => {
         },
     );
 
-    const addNewMessage = (text) => {
-    const messageToAdd = {
-        id: Date.now(),
-        sender: "own",
-        text,
-        time: new Date().toLocaleTimeString([], {
-            hour: "2-digit",
-            minute: "2-digit",
-            hour12: false
-        }),
-        timestamp: Date.now(),
-        status: "no-read",
+    useEffect(() => {
+    if (activeChatId && !(activeChatId in messages)) {
+        setMessages(prev => ({
+            ...prev,
+            [activeChatId]: []
+        }));
     }
+}, [activeChatId, messages]);
 
-    setMessages((prev) => ({
-        ...prev,
-        [activeChatId]: [...(prev[activeChatId] || []), messageToAdd],
-    }));
-};
+    const addNewMessage = (text) => {
+        if (!activeChatId) return;
+
+        const messageToAdd = {
+            id: Date.now(),
+            sender: "own",
+            text,
+            time: new Date().toLocaleTimeString([], {
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: false
+            }),
+            timestamp: Date.now(),
+            status: "no-read",
+        }
+
+        setMessages((prev) => ({
+            ...prev,
+            [activeChatId]: [...(prev[activeChatId] || []), messageToAdd],
+        }));
+    };
 
     const handleDeleteMessage = (chatId, messageId) => {
+        if (!chatId) return;
         setMessages(prev => ({
             ...prev,
             [chatId]: prev[chatId].filter(message => message.id !== messageId)
@@ -366,10 +378,11 @@ const MessagesContextProvider = ({ children }) => {
 
     return (
         <MessagesContext.Provider
-            value={{ 
-                messages: messages, 
-                addNewMessage: addNewMessage, 
-                handleDeleteMessage: handleDeleteMessage }}
+            value={{
+                messages: messages,
+                addNewMessage: addNewMessage,
+                handleDeleteMessage: handleDeleteMessage
+            }}
         >
             {children}
         </MessagesContext.Provider>
