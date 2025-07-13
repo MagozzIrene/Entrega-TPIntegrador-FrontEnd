@@ -3,5 +3,5 @@
     width: 100%;
     min-height: 100dvh;
     background-color: var(--primary-bg-color);
+    justify-content: center;
 }
-
