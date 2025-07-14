@@ -60,7 +60,6 @@ h1 {
 
     .contact-list-header .filter-input {
         padding: var(--space-sm);
-/*         font-size: var(--fs-base); */
     }
 
     .theme-toggle-btn svg {

@@ -33,7 +33,7 @@
 }
 
 .message__text {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
 }
 
 .message__meta {
@@ -41,7 +41,7 @@
     align-items: center;
     display: flex;
     gap: var(--space-xs);
-    font-size: var(--fs-xs);
+    font-size: var(--fs-sm);
 }
 
 .message__time {
@@ -66,27 +66,18 @@
 
 @media only screen and (min-width: 750px) {
     .message {
-/*         padding: var(--space-md); */
         gap: var(--space-sm);
     }
 
-    .message__text {
-        font-size: var(--fs-md);
-    }
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(15px);
+        }
 
-    .message__meta {
-        font-size: var(--fs-sm);
-    }
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }

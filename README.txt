@@ -46,4 +46,10 @@ Algunas dudas o cosas a revisar
 
     Podría haber usado más variables CSS para evitar repeticiones.
 
-    Los detalles del contacto (en la vista individual) quedaron con menos diseño del que había imaginado al principio.
+Cosas importantes que llegué a actualizar desde que entregué:
+
+    Separé los estilos por componentes
+
+    Finalmente pude implementar la doble pantalla, yay 🥳🥳
+
+    Mejore el diseño de ContactDetail, que venía flojo de papeles

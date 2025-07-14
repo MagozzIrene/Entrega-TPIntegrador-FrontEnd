@@ -5,7 +5,7 @@
 }
 
 .split-screen__left {
-    flex: 1.7;
+    flex: 1.2;
     border-right: 1px solid var(--border-color);
     overflow-y: auto;
 }
@@ -13,4 +13,10 @@
 .split-screen__right {
     flex: 3;
     overflow-y: auto;
+}
+
+@media (max-width: 1000px) {
+    .split-screen__left {
+        flex: 1.7;
+    }
 }
