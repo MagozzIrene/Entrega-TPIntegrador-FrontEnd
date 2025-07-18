@@ -3,9 +3,14 @@ import { MessagesContext } from "@/context/MessagesContext";
 import { ActiveChatContext } from "@/context/ActiveChatContext";
 import '../styles/Message.css'
 
+const escapeRegExp = (string) => {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+};
+
 const highlightText = (text, searchTerm) => {
     if (!searchTerm) return text;
-    const regex = new RegExp(`(${searchTerm})`, "gi");
+    const safeSearch = escapeRegExp(searchTerm);
+    const regex = new RegExp(`(${safeSearch})`, "gi");
     const parts = text.split(regex);
     return parts.map((part, index) =>
         part.toLowerCase() === searchTerm.toLowerCase()
