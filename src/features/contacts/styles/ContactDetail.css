@@ -131,7 +131,7 @@
     margin-bottom: var(--space-xs);
     transition: all 0.2s ease;
     cursor: pointer;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--secondary-txt-color);
 }
 
 .contact-detail__info-section:last-child {
@@ -139,7 +139,7 @@
 }
 
 .contact-detail__info-section:hover {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: var(--hover-bg-color);
     border-radius: 0.5rem;
 }
 

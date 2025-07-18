@@ -12,6 +12,8 @@
   --contact-bg-color: #111b21;
   --contact-bg-active: #2a3942;
 
+  --hover-bg-color: rgba(255, 255, 255, 0.05);
+
   --primary-txt-color: #e9edef; 
   --secondary-txt-color: #8696a0;
 
@@ -55,6 +57,8 @@
 
   --contact-bg-color: #ffffff;
   --contact-bg-active: #d4d9d9;
+
+  --hover-bg-color: rgba(0, 0, 0, 0.05);
 
   --primary-txt-color: #111b21;
   --secondary-txt-color: #667781; 
