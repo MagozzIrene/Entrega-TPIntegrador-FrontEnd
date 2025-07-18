@@ -1,6 +1,6 @@
 import React from "react";
 
-const Filter = ({ value, onChange, placeholder = " Buscar..." }) => {
+const Filter = ({ value, onChange, placeholder = " Buscar...", filterId }) => {
     return (
         <input
             type="search"
@@ -9,7 +9,7 @@ const Filter = ({ value, onChange, placeholder = " Buscar..." }) => {
             onChange={(e) => onChange(e.target.value)}
             placeholder={placeholder}
             name="search"
-            id="filterInput"
+            id={filterId}
             aria-label={placeholder}
             autoComplete="on"
         />

@@ -45,6 +45,7 @@ const ChatHeader = ({ onSearchChange, onBack, activeContact }) => {
                     value={searchTerm}
                     onChange={handleSearchChange}
                     placeholder="Buscar en el chat..."
+                    filterId="chat-filter"
                 />
             </div>
         </header>

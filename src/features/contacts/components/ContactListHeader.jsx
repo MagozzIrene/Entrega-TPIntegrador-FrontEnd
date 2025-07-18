@@ -17,7 +17,10 @@ const ContactListHeader = ({ onSearchChange, toggleTheme, isLight }) => {
                 <h1>Phantom Chats</h1>
                 <ThemeToggle toggleTheme={toggleTheme} isLight={isLight} />
             </div>
-            <Filter value={searchTerm} onChange={handleSearchChange} />
+            <Filter 
+                value={searchTerm} 
+                onChange={handleSearchChange} 
+                filterId="contact-filter"/>
         </header>
     )
 }
