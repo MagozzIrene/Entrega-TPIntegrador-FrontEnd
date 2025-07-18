@@ -55,3 +55,6 @@ Cosas importantes que llegué a actualizar desde que entregué:
     Mejore el diseño de ContactDetail, que venía flojo de papeles
 
     Reemplacé la "x" que usaba para eliminar mensajes por un tachito que aparece al hacer hover.
+
+    PD: Creo que se ve mejor en FireFox
+    PD2: Recomiendo al 200% la saga Persona 🤩
