@@ -338,13 +338,13 @@ const MessagesContextProvider = ({ children }) => {
     );
 
     useEffect(() => {
-    if (activeChatId && !(activeChatId in messages)) {
-        setMessages(prev => ({
-            ...prev,
-            [activeChatId]: []
-        }));
-    }
-}, [activeChatId, messages]);
+        if (activeChatId && !(activeChatId in messages)) {
+            setMessages(prev => ({
+                ...prev,
+                [activeChatId]: []
+            }));
+        }
+    }, [activeChatId, messages]);
 
     const addNewMessage = (text) => {
         if (!activeChatId) return;

@@ -9,9 +9,9 @@ const ContactCard = ({ id, name, last_time_conected, contact_photo, last_message
     const navigate = useNavigate();
 
     const handleClick = () => {
-    setActiveChatId(id);
-    navigate(`/chat/${id}`);
-};
+        setActiveChatId(id);
+        navigate(`/chat/${id}`);
+    };
 
     return (
         <div className="contact" onClick={handleClick}>

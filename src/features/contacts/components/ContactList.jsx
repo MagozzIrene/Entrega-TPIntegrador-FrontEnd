@@ -13,7 +13,7 @@ const ContactList = ({ searchTerm }) => {
 
     if (isLoadingContacts) {
         return (
-            <div  className="contact-list">
+            <div className="contact-list">
                 <LoaderSpinner />
             </div>
         );

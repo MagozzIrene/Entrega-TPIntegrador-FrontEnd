@@ -1,4 +1,4 @@
-import React, { useContext, useState} from 'react'
+import React, { useContext, useState } from 'react'
 import ContactListHeader from '../components/ContactListHeader'
 import ContactList from '../components/ContactList'
 import { ActiveChatContext } from '@/context/ActiveChatContext';

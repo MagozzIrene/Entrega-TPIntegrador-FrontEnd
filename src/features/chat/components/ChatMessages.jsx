@@ -10,15 +10,15 @@ const ChatMessages = ({ searchTerm }) => {
     const activeMessages = messages?.[activeChatId] || [];
     const messagesEndRef = useRef(null);
 
-useEffect(() => {
+    useEffect(() => {
         if (messagesEndRef.current && activeMessages.length > 0) {
             messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
         }
     }, [activeMessages, activeChatId]);
 
     if (!activeChatId || !(activeChatId in messages)) {
-    return null;
-}
+        return null;
+    }
 
     if (activeMessages.length === 0) {
         return (

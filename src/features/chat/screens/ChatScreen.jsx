@@ -13,7 +13,7 @@ const ChatScreen = () => {
     const { activeChatId } = useContext(ActiveChatContext);
     const { contacts, isLoadingContacts } = useContext(ContactsContext);
     const navigate = useNavigate()
-    
+
     const activeContact = contacts.find(c => String(c.id) === String(activeChatId))
 
     const handleBack = () => {
