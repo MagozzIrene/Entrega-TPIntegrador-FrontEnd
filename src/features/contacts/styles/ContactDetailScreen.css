@@ -4,4 +4,12 @@
     min-height: 100dvh;
     background-color: var(--primary-bg-color);
     justify-content: center;
+
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.contact-detail-screen::-webkit-scrollbar {
+    display: none;
 }

@@ -10,6 +10,14 @@
     background-color: var(--primary-bg-color);
     animation: fadeInUp 0.5s ease-out;
     border-radius: 0.8rem;
+
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.contact-details::-webkit-scrollbar {
+    display: none;
 }
 
 .contact-details__header {
