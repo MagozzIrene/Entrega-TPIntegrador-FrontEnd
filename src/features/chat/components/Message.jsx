@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import { MessagesContext } from "@/context/MessagesContext";
 import { ActiveChatContext } from "@/context/ActiveChatContext";
 import '../styles/Message.css'
@@ -14,7 +14,7 @@ const highlightText = (text, searchTerm) => {
     );
 };
 
-const Message = ({id, sender, time, text, status, searchTerm }) => {
+const Message = ({ id, sender, time, text, status, searchTerm }) => {
     const { handleDeleteMessage } = useContext(MessagesContext);
     const { activeChatId } = useContext(ActiveChatContext);
 
@@ -32,14 +32,15 @@ const Message = ({id, sender, time, text, status, searchTerm }) => {
                         {status === 'no-read' && "✓"}
                         {status === 'no-send' && "⏳"}
                     </span>
-                    )
-                }
-                <button 
-                    onClick={() => handleDeleteMessage(activeChatId, id)} 
-                    className='delete-btn'
-                    aria-label="Eliminar mensaje"
-                >x</button>
+                )}
             </div>
+            <button
+                onClick={() => handleDeleteMessage(activeChatId, id)}
+                className="delete-btn"
+                aria-label="Eliminar mensaje"
+            >
+                🗑
+            </button>
         </div>
     )
 }

@@ -53,3 +53,5 @@ Cosas importantes que llegué a actualizar desde que entregué:
     Finalmente pude implementar la doble pantalla, yay 🥳🥳
 
     Mejore el diseño de ContactDetail, que venía flojo de papeles
+
+    Reemplacé la "x" que usaba para eliminar mensajes por un tachito que aparece al hacer hover.
