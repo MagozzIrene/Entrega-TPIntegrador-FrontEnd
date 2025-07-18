@@ -42,6 +42,9 @@ const NewMessageForm = () => {
 
                 <textarea
                     id="messageTextarea"
+                    name="message"
+                    autoComplete="on"
+                    aria-label="Escribe un mensaje" 
                     value={newMessage}
                     onChange={(e) => setNewMessage(e.target.value)}
 
