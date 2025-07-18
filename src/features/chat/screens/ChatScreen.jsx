@@ -1,5 +1,5 @@
-import React, { useState, useContext, useEffect } from 'react'
-import { useNavigate, useParams } from 'react-router'
+import React, { useState, useContext } from 'react'
+import { useNavigate } from 'react-router'
 import ChatMessages from '../components/ChatMessages'
 import NewMessagesForm from '../components/NewMessageForm'
 import ChatHeader from '../components/ChatHeader'
